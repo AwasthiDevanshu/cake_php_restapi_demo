@@ -36,6 +36,20 @@ return [
      */
     'Datasources' => [
         'default' => [
+            'className' => 'Cake\Database\Connection',
+            // Replace Mysql with Postgres if you are using PostgreSQL
+            'driver' => 'Cake\Database\Driver\Mysql',
+            'persistent' => false,
+            'host' => 'localhost',
+            'username' => 'cakephp',
+            'password' => 'cakephp',
+            'database' => 'cakephp',
+            // Comment out the line below if you are using PostgreSQL
+            'encoding' => 'utf8mb4',
+            'timezone' => 'UTC',
+            'cacheMetadata' => true,
+        ],
+        'default' => [
             'host' => 'localhost',
             /*
              * CakePHP will use the default DB port based on the driver selected
